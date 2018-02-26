@@ -1,0 +1,77 @@
+<html>
+<head><title>Happy Birthday Laura!</title>
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+<style> 
+
+body {
+	animation: back 4s 15;
+	font-family: Shadows Into Light;
+	animation-iteration-count: infinite;
+}
+
+@keyframes back {
+	0% {background-color: cornflowerblue;}
+	15% {background-color: 9999FF;} /*9999FF*/
+	55% {background-color: 00CC99;} /*00CC99*/
+	85% {background-color: f4df42;}
+	100% {background-color: cornflowerblue;}
+}
+
+#intro1 {
+	font-size: 50px;
+	animation: intro .5s 1s both;
+}
+#intro2 {
+	font-size: 50px;
+	animation: intro .5s 1.5s both;
+}
+#intro3 {
+	font-size: 50px;
+	animation: intro .5s 2s both;
+}
+#image {
+	width: 300px;
+	position: absolute;
+	height: auto;
+	animation: image-animation 1s 3s both;
+}
+@keyframes intro {
+	from {opacity: 0;}
+	to {opacity: 1; font-size: 100px;}
+}
+/*@keyframes introTwo {
+	from {opacity: 0;}
+	to {opacity: 1; font-size: 100px;}
+}
+@keyframes introThree {
+	from {opacity: 0;}
+	to {opacity: 1; font-size: 100px;}
+}*/
+
+@keyframes image-animation {
+	0% {opacity: 0; left: 0px; top: 0px;}
+	25% {opacity: 1; left: 50%; top: 40%;}
+	50% {opacity: 1; left: 80%; top: 10%;}
+	100% {opacity: 1; left: 39%; top: 55%;}
+}
+
+</style>
+
+</head>
+
+<body>
+<audio autoplay>
+  <source src="http://baseshare.com/uploads/songs/06152017/Sigala,%20Ella%20Eyre%20-%20Came%20Here%20For%20Love%20(ErapZOne%20TUnez%20-%20playlist).mp3" type="audio/mp3">
+</audio>
+
+
+<img id="image" src="https://media.giphy.com/media/jxTnOS8Mkv8n6/giphy.gif">
+
+<div style="text-align: center;position: absolute; top: 5%; width: 100%">
+<span id="intro1">HAPPY </span>
+<span id="intro2">BIRTHDAY </span><br>
+<span id="intro3">LAURA!</span><br>
+</div>
+
+</body>
